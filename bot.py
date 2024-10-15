@@ -1,4 +1,3 @@
-
 import os
 import time
 import threading
@@ -6,7 +5,7 @@ from aiohttp import web
 from plugins import web_server
 
 import pyromod.listen
-from pyrogram import Client
+from pyrogram import Client, filters  # Corrected import statement
 from pyrogram.enums import ParseMode
 from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, FORCE_SUB_CHANNEL2, CHANNEL_ID, PORT
 from datetime import datetime
