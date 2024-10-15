@@ -11,39 +11,39 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "66960Hws3ws6hyIvNeAGkUUZ8KtHy1YwA06RDM")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7116038251:AAEK0Fx9gxAp41Yv0ZLqj_vJUbBWIcaep70")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "22474"))
+APP_ID = int(os.environ.get("APP_ID", "7603458"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "d8c8dab274f9a811d044028e")
+API_HASH = os.environ.get("API_HASH", "910e420f1f74f40305a684a331dade35")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-100209984452"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002027498504"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "644663201"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1735152469"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mex:rex@cluster7.jrzowqz.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Sistaanimebash:Sistaanimebash@cluster0.w6ucx5p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DB_URI)
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002066098636"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002030762594"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001715616229"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001974461884"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am a file store bot Powered by @Animes_xyz ⚡</b>.")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am a file store bot Powered by @Animes_bash in⚡</b>.")
 try:
-    ADMINS=[6446763201]
-    for x in (os.environ.get("ADMINS", "6446763201").split()):
+    ADMINS=[6446763201]unme
+    for x in (os.environ.get("ADMINS", "1889175355 6427494689 1119579816 1735152469 1632095203 6610700592").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
