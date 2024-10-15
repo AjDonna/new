@@ -44,7 +44,7 @@ class Bot(Client):
         if FORCE_SUB_CHANNEL2:
             try:
                 link = (await self.create_chat_invite_link(chat_id=FORCE_SUB_CHANNEL2, creates_join_request=True)).invite_link
-                self.invitelink2 = link
+                self.invitelink = link  # Corrected from self.invitelink2 to self.invitelink
             except Exception as a:
                 self.LOGGER(__name__, a)
 
@@ -80,6 +80,7 @@ class Bot(Client):
                 del self.uploaded_files[file_name]  # Remove from tracking
                 # Notify user about file deletion
                 self.send_message(user_id, f"The file '{file_name}' has been deleted after 30 minutes.")
+
 
 if __name__ == "__main__":
     bot = Bot()
